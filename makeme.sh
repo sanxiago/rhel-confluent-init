@@ -19,8 +19,6 @@ do
 			--build-arg cp_version=$CP_VERSION \
 			--build-arg jdk_version=$JDK_VERSION \
 			-t rhel-confluent-init:$CP_VERSION"_jdk_"$JDK_VERSION
-
-		docker image rm rhel-confluent-init:$CP_VERSION"_jdk_"$JDK_VERSION
 	fi
 done
 else
